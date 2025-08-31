@@ -1,0 +1,202 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff9c2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000000;
+    padding: 15px 30px;
+}
+
+.logo {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('https://images.unsplash.com/photo-1601924574938-6434b1d1a2c9') no-repeat center/cover;
+    color: rgb(0, 0, 0);
+}
+
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #f77f00;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #000000;
+}
+
+/* Serviços */
+.servicos {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fefae0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 0 4px #fabe3d, 0 0 4px #fabe3d, 0 0 10px #d62828;
+}
+
+/* Sobre */
+.sobre {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+.foto-sobre {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 20px #f77f00, 0 0 40px #f77f00, 0 0 60px #d62828;
+}
+
+/* Contato */
+.contato {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000000;
+    color: white;
+    margin-top: 90px;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px;
+        background: #222;
+        border-radius: 5px;
+    }
+
+    /* Banner */
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    /* Cards de serviços */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Imagem Sobre */
+    .foto-sobre {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 22px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
